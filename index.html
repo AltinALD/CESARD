@@ -8,42 +8,112 @@
   <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
-  <header>
+  <header class="header">
     <div class="header-content">
       <div class="logo">
         <img src="images/logo.png" alt="CESARD Logo">
         CESARD
       </div>
-      <nav class="main-nav">
-        <a href="#about">Rreth Nesh</a>
-        <a href="#whatwedo">Çfarë Bëjmë</a>
-        <a href="#contact">Kontakt</a>
-      </nav>
-      <div class="header-actions">
-        <select id="lang-select" class="language-selector">
-          <option value="sq" selected>Shqip</option>
-          <option value="en">English</option>
-          <option value="mk">Македонски</option>
-        </select>
+      
+      <!-- Mobile Navigation Toggle -->
+      <button class="mobile-nav-toggle" id="mobileNavToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <!-- Desktop Navigation -->
+      <nav class="mobile-nav">
+        <ul class="nav-links">
+          <li><a href="#home">Kryesore</a></li>
+          <li><a href="#about">Rreth Nesh</a></li>
+          <li><a href="#services">Shërbimet</a></li>
+          <li><a href="#news">Lajme</a></li>
+          <li><a href="#contact">Kontakti</a></li>
+        </ul>
         <div class="social-icons">
-          <a href="https://www.instagram.com/cesard_te?igsh=bGJ4eGhhMzRvZXlu" target="_blank" rel="noopener" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.974.974 1.246 2.241 1.308 3.608.058 1.266.069 1.646.069 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.974.974-2.241 1.246-3.608 1.308-1.266.058-1.646.069-4.85.069s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.974-.974-1.246-2.241-1.308-3.608C2.175 15.647 2.163 15.267 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608C4.515 2.567 5.782 2.295 7.148 2.233 8.414 2.175 8.794 2.163 12 2.163zm0-2.163C8.741 0 8.332.013 7.052.072 5.771.131 4.659.363 3.678 1.344c-.98.98-1.213 2.092-1.272 3.373C2.013 5.668 2 6.077 2 12c0 5.923.013 6.332.072 7.613.059 1.281.292 2.393 1.272 3.373.98.98 2.092 1.213 3.373 1.272C8.332 23.987 8.741 24 12 24s3.668-.013 4.948-.072c1.281-.059 2.393-.292 3.373-1.272.98-.98 1.213-2.092 1.272-3.373.059-1.281.072-1.69.072-7.613 0-5.923-.013-6.332-.072-7.613-.059-1.281-.292-2.393-1.272-3.373-.98-.98-2.092-1.213-3.373-1.272C15.668.013 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998zm6.406-11.845a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/></svg></a>
-          <a href="https://www.facebook.com/cecard.tetove.5" target="_blank" rel="noopener" aria-label="Facebook"><svg xmlns='http://www.w3.org/2000/svg' width='22' height='22' fill='currentColor' viewBox='0 0 24 24'><path d='M22.675 0h-21.35C.595 0 0 .592 0 1.326v21.348C0 23.408.595 24 1.325 24h11.495v-9.294H9.691v-3.622h3.129V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.797.143v3.24l-1.918.001c-1.504 0-1.797.715-1.797 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.406 24 24 23.408 24 22.674V1.326C24 .592 23.406 0 22.675 0'/></svg></a>
-          <a href="https://wa.me/38970482517" target="_blank" rel="noopener" aria-label="WhatsApp"><svg xmlns='http://www.w3.org/2000/svg' width='22' height='22' fill='currentColor' viewBox='0 0 24 24'><path d='M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.198.297-.767.966-.94 1.164-.173.198-.347.223-.644.075-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.521-.075-.149-.669-1.611-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.372-.01-.571-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.099 3.2 5.077 4.363.709.306 1.262.489 1.694.626.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.288.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.617h-.001a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.999-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.455 4.436-9.89 9.892-9.89 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.896 6.994c-.003 5.455-4.438 9.89-9.893 9.89m8.413-18.304A11.815 11.815 0 0 0 12.05.001C5.495.001.06 5.436.058 11.991c0 2.113.553 4.174 1.601 5.981L.057 24l6.164-1.637a11.93 11.93 0 0 0 5.828 1.484h.005c6.554 0 11.89-5.435 11.893-11.99a11.86 11.86 0 0 0-3.484-8.486' /></svg></a>
+          <a href="https://www.instagram.com/cesard_tetove" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.facebook.com/cesardtetove" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://wa.me/38971234567" target="_blank" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+          </a>
         </div>
-      </div>
-    </div>
-    <div class="slideshow">
-      <img src="images/c1.jpg" class="slide active" alt="Slide 1">
-      <img src="images/c2.jpg" class="slide" alt="Slide 2">
-      <img src="images/c3.jpg" class="slide" alt="Slide 3">
-      <div class="slide-nav">
-        <button id="slide-prev" class="slide-arrow" aria-label="Previous">&#8592;</button>
-        <button id="slide-next" class="slide-arrow" aria-label="Next">&#8594;</button>
-      </div>
+        <div class="custom-lang-selector" id="customLangSelector">
+          <button class="lang-selected" id="langSelectedBtn">
+            <img src="flags/al.png" alt="Albanian" class="lang-flag"> SQ
+            <span class="lang-arrow">▼</span>
+          </button>
+          <div class="lang-options" id="langOptions">
+            <div class="lang-option" data-lang="sq"><img src="flags/al.png" alt="Albanian" class="lang-flag"> SQ</div>
+            <div class="lang-option" data-lang="en"><img src="flags/en.png" alt="English" class="lang-flag"> EN</div>
+            <div class="lang-option" data-lang="mk"><img src="flags/mk.png" alt="Macedonian" class="lang-flag"> MK</div>
+          </div>
+        </div>
+      </nav>
     </div>
   </header>
 
+  <!-- Slideshow -->
+  <div class="slideshow">
+    <img src="images/c1.jpg" class="slide active" alt="Slide 1">
+    <img src="images/c2.jpg" class="slide" alt="Slide 2">
+    <img src="images/c3.jpg" class="slide" alt="Slide 3">
+    <div class="slide-nav">
+      <button id="slide-prev" class="slide-arrow" aria-label="Previous">&#8592;</button>
+      <button id="slide-next" class="slide-arrow" aria-label="Next">&#8594;</button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
   
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-header">
+      <div class="logo">CESARD</div>
+      <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">
+        &times;
+      </button>
+    </div>
+    
+    <nav class="mobile-menu-nav">
+      <a href="#home">Kryesore</a>
+      <a href="#about">Rreth Nesh</a>
+      <a href="#services">Shërbimet</a>
+      <a href="#news">Lajme</a>
+      <a href="#contact">Kontakti</a>
+    </nav>
+    
+    <div class="mobile-menu-footer">
+      <div class="custom-lang-selector mobile" id="customLangSelectorMobile">
+        <button class="lang-selected" id="langSelectedBtnMobile">
+          <img src="flags/al.png" alt="Albanian" class="lang-flag"> SQ
+          <span class="lang-arrow">▼</span>
+        </button>
+        <div class="lang-options" id="langOptionsMobile">
+          <div class="lang-option" data-lang="sq"><img src="flags/al.png" alt="Albanian" class="lang-flag"> SQ</div>
+          <div class="lang-option" data-lang="en"><img src="flags/en.png" alt="English" class="lang-flag"> EN</div>
+          <div class="lang-option" data-lang="mk"><img src="flags/mk.png" alt="Macedonian" class="lang-flag"> MK</div>
+        </div>
+      </div>
+      <div class="mobile-social-icons">
+        <a href="https://www.instagram.com/cesard_tetove" target="_blank" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/cesardtetove" target="_blank" aria-label="Facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://wa.me/38971234567" target="_blank" aria-label="WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
   <main>
     <section class="about fade-in">
       <h2 class="section-title">Misioni ynë</h2>
@@ -82,7 +152,7 @@
 
   <section class="upcoming-section fade-in">
     <h2 class="section-title">Aktivitetet dhe Planet e Ardhshme</h2>
-    <div class="upcoming-card" style="background-image: url('images/event-bg.jpg');">
+    <div class="upcoming-card" style="background-image: url('images/k1.jpg');">
       <div class="upcoming-overlay">
         <div class="upcoming-title">Official Warning: June 8 - Camp Day & Traditional March 🥾🐑</div>
         <div class="upcoming-meta">
