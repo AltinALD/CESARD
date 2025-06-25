@@ -804,50 +804,44 @@ html {
 }
 
 .mobile-nav-toggle.active span:nth-child(3) {
-  transform: rotate(-45deg) translate(6px, -6px);
+  transform: translateY(-8px) rotate(-45deg);
 }
 
-.mobile-nav {
+.desktop-nav {
   display: flex;
   align-items: center;
-  gap: 2rem;
 }
-
-.mobile-nav .nav-links {
+.desktop-nav .nav-links {
+  list-style: none;
   display: flex;
   gap: 1.5rem;
-  list-style: none;
   margin: 0;
   padding: 0;
 }
-
-.mobile-nav .nav-links a {
-  color: var(--green-accent);
+.desktop-nav .nav-links a {
   text-decoration: none;
+  color: var(--green);
   font-weight: 600;
-  font-size: 1rem;
-  transition: color 0.3s ease;
+  font-size: 1.1rem;
   padding: 0.5rem 0;
+  position: relative;
+  transition: color 0.3s;
 }
-
-.mobile-nav .nav-links a:hover {
-  color: var(--green);
-}
-
-.mobile-nav .social-icons {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-}
-
-.mobile-nav .social-icons a {
+.desktop-nav .nav-links a:hover {
   color: var(--green-accent);
-  font-size: 1.2rem;
-  transition: color 0.3s ease, transform 0.3s ease;
 }
-
-.mobile-nav .social-icons a:hover {
+.desktop-nav .social-icons {
+  display: flex;
+  gap: 0.8rem;
+  margin-left: 2rem;
+}
+.desktop-nav .social-icons a {
   color: var(--green);
+  font-size: 1.4rem;
+  transition: color 0.3s, transform 0.3s;
+}
+.desktop-nav .social-icons a:hover {
+  color: var(--green-accent);
   transform: scale(1.1);
 }
 
@@ -997,9 +991,9 @@ html {
   .mobile-menu-overlay {
     display: none !important;
   }
-  
-  .mobile-nav {
-    display: flex !important;
+  .desktop-nav {
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -1024,20 +1018,15 @@ html {
   
   .logo img {
     width: 28px;
-    height: 28px;
+    height: 40px;
   }
   
   .mobile-nav-toggle {
     display: flex;
-    position: absolute;
-    top: 0.8rem;
-    right: 1rem;
   }
-  
-  .mobile-nav {
+  .desktop-nav {
     display: none;
   }
-  
   .mobile-menu-overlay {
     display: block;
   }
