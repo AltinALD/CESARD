@@ -901,30 +901,30 @@ html {
 }
 
 .mobile-menu-header .logo {
-  color: var(--green-accent);
-  font-size: 1.5rem;
-  font-weight: 700;
+  color: var(--green);
+  font-size: 2rem;
 }
 
 .mobile-menu-close {
-  background: none;
-  border: none;
-  color: var(--green-accent);
-  font-size: 2.2rem;
-  font-weight: 700;
-  cursor: pointer;
-  padding: 0.2rem 0.7rem 0.2rem 0.7rem;
-  line-height: 1;
-  position: absolute;
-  top: 0.7rem;
-  right: 0.7rem;
+  background: var(--green);
   border-radius: 50%;
-  transition: background 0.18s;
+  color: white;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border: none;
 }
+
 .mobile-menu-close:hover, .mobile-menu-close:focus {
-  background: rgba(67,160,71,0.08);
-  color: var(--green);
-  outline: none;
+  background: var(--green-accent);
+  transform: rotate(90deg) scale(1.1);
 }
 
 .mobile-menu-nav {
