@@ -118,6 +118,13 @@ document.addEventListener('DOMContentLoaded', function() {
 (function() {
   const lang = localStorage.getItem('cesard-lang');
   const page = window.location.pathname.split('/').pop();
+  
+  // Don't redirect if we're on a project page or other non-index page
+  if (page && (page.includes('projects') || page.includes('contact') || page.includes('about'))) {
+    return; // Allow these pages to load normally
+  }
+  
+  // Only redirect main index pages
   if (lang === 'en' && page !== 'index-en.html') {
     window.location.href = 'index-en.html';
   } else if (lang === 'mk' && page !== 'index-mk.html') {
@@ -188,17 +195,28 @@ if (mobileNavToggle) mobileNavToggle.addEventListener('click', toggleMobileMenu)
 if (mobileMenuClose) mobileMenuClose.addEventListener('click', closeMobileMenu);
 if (mobileMenuOverlay) mobileMenuOverlay.addEventListener('click', closeMobileMenu);
 
-// Close mobile menu when clicking on navigation links
+// Smooth scrolling for mobile navigation
 const mobileNavLinks = document.querySelectorAll('.mobile-menu-nav a');
 mobileNavLinks.forEach(link => {
-  link.addEventListener('click', closeMobileMenu);
-});
-
-// Smooth scrolling for mobile navigation
-mobileNavLinks.forEach(link => {
   link.addEventListener('click', function(e) {
-    e.preventDefault();
     const targetId = this.getAttribute('href');
+    
+    // If it's an external link (contains .html), allow normal navigation
+    if (targetId.includes('.html')) {
+      closeMobileMenu();
+      // Don't prevent default - let the browser handle navigation
+      return;
+    }
+    
+    // If it's an external URL (starts with http), allow normal navigation
+    if (targetId.startsWith('http')) {
+      closeMobileMenu();
+      // Don't prevent default - let the browser handle navigation
+      return;
+    }
+    
+    // For internal anchor links (like #home, #about), prevent default and scroll smoothly
+    e.preventDefault();
     const targetSection = document.querySelector(targetId);
     
     if (targetSection) {
@@ -209,6 +227,7 @@ mobileNavLinks.forEach(link => {
         top: targetPosition,
         behavior: 'smooth'
       });
+      closeMobileMenu();
     }
   });
 });
@@ -252,8 +271,22 @@ setInterval(nextSlide, 5000);
 const navLinks = document.querySelectorAll('.nav-links a');
 navLinks.forEach(link => {
   link.addEventListener('click', function(e) {
-    e.preventDefault();
     const targetId = this.getAttribute('href');
+    
+    // If it's an external link (contains .html), allow normal navigation
+    if (targetId.includes('.html')) {
+      // Don't prevent default - let the browser handle navigation
+      return;
+    }
+    
+    // If it's an external URL (starts with http), allow normal navigation
+    if (targetId.startsWith('http')) {
+      // Don't prevent default - let the browser handle navigation
+      return;
+    }
+    
+    // For internal anchor links (like #home, #about), prevent default and scroll smoothly
+    e.preventDefault();
     const targetSection = document.querySelector(targetId);
     
     if (targetSection) {
@@ -401,4 +434,73 @@ if ('serviceWorker' in navigator) {
         console.log('ServiceWorker registration failed');
       });
   });
+}
+
+// PDF Download Function
+function downloadPDF() {
+  // Create a temporary link element
+  const link = document.createElement('a');
+  
+  // Set the PDF content (you can replace this with an actual PDF file path)
+  // For now, we'll create a simple text-based PDF content
+  const pdfContent = `
+    TURIZMI RURAL SI MUNDËSI ZHVILLIMORE
+    =====================================
+    
+    QËLLIMI I HULUMTIMIT
+    --------------------
+    Qëllimi i këtij hulumtimi është të nxjer në pah potencialin ekonomik për zhvillimin e ekonomisë rurale dhe turizmit rural tek në rajonin e quajtur Stanet e Shipkovicës si edhe tek të gjithat entitetet joformale që ekzistojnë në pjesën malore të rajonit të Pollogut.
+    
+    PARKU KOMBËTAR MALI SHARR
+    --------------------------
+    Mali Sharr është një masiv i madh malor i lartë që shtrihet përgjatë zonës kufitare midis Maqedonisë së Veriut dhe Kosovës. Zona e Malit Sharr përfaqëson një pikë të nxehtë të biodiversitetit evropian me vlera të jashtëzakonshme natyrore.
+    
+    HISTORIKU I STANEVET TË SHIPKOVICËS
+    -----------------------------------
+    Stanet e Shipkovicës janë të vendosura në një lokacion shumë atraktiv. Ndodhen hiç më shumë se 4 kilometra nga Kodra e Diellit. Aktualisht ka 63 Stane, të cilat kohët e fundit më së shumti ju ngjajnë vikend-shtëpizave se sa staneve të vërteta.
+    
+    GJETJET NGA HULUMTIMI
+    ---------------------
+    Nga gjithsej 21 të anketuar rezulton se:
+    - 11 prej tyre e kanë në shfrytëzim stanin më shumë se 10 vjet
+    - 13 prej tyre janë pronarë të parë kurse 8 nga të anketuarit e kanë të trashëguar
+    - Vetëm 7 prej tyre e përdorin për ruajtjen e bagëtive
+    - 16-të nga të anketuarit besojnë se Stanet e Shipkovicës mund të ndihmojnë në ekonominë rurale
+    
+    MUNDËSITË E IDENTIFIKUARA
+    -------------------------
+    1. Agroturizëm Vila Stanet - Akomodim, ushqime tradicionale, guidë malore, mjaltë
+    2. Tafil Arifi - Një ditë bari, mjellja e deleve, shitjen e prodhimeve të qumështit
+    3. Nexhbedin Haliti – Eko Natyra - Akomodim, çajra, guidë malore dhe për zogjtë
+    4. Vejtse Hause_Veli Veiu Vicë - Akomodim deri ne 10 persona, ushqim dhe guidë
+    5. Muhamed Jashari f. Veshallë - Akomodim dhe ushqim, mjaltë dhe produkte blete
+    6. Traditional food Bozovca - Shahin Fazlija – Bozovcë
+    
+    PËRFUNDIM
+    ---------
+    Ky hulumtim do shërbejë si një burim informacioni për historikun dhe zhvillimin e staneve të Shipkovicës. Rëndësia e tij qëndron në identifikimin e potencialit turistik gërshetuar me mundësitë e ekonomive të vogla familjare joformale.
+    
+    © 2024 CESARD - Të gjitha të drejtat e rezervuara
+  `;
+  
+  // Create a Blob with the content
+  const blob = new Blob([pdfContent], { type: 'text/plain' });
+  
+  // Create a URL for the blob
+  const url = window.URL.createObjectURL(blob);
+  
+  // Set the link properties
+  link.href = url;
+  link.download = 'hulumtimi-turizmi-rural-stanet-shipkovice.pdf';
+  
+  // Append link to body, click it, and remove it
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+  
+  // Clean up the URL
+  window.URL.revokeObjectURL(url);
+  
+  // Show success message
+  alert('Hulumtimi u shkarkua me sukses!');
 } 

@@ -28,6 +28,7 @@
           <li><a href="#home">Kryesore</a></li>
           <li><a href="#about">Rreth Nesh</a></li>
           <li><a href="#services">Shërbimet</a></li>
+          <li><a href="projects.html">Projektet Tona</a></li>
           <li><a href="#news">Lajme</a></li>
           <li><a href="#contact">Kontakti</a></li>
         </ul>
@@ -58,7 +59,7 @@
   </header>
 
   <!-- Slideshow -->
-  <div class="slideshow">
+  <div id="home" class="slideshow">
     <img src="images/c1.jpg" class="slide active" alt="Slide 1">
     <img src="images/c2.jpg" class="slide" alt="Slide 2">
     <img src="images/c3.jpg" class="slide" alt="Slide 3">
@@ -84,6 +85,7 @@
       <a href="#home">Kryesore</a>
       <a href="#about">Rreth Nesh</a>
       <a href="#services">Shërbimet</a>
+      <a href="projects.html">Projektet Tona</a>
       <a href="#news">Lajme</a>
       <a href="#contact">Kontakti</a>
     </nav>
@@ -115,14 +117,14 @@
   </div>
 
   <main>
-    <section class="about fade-in">
+    <section id="about" class="about fade-in">
       <h2 class="section-title">Misioni ynë</h2>
       <p>
         Qendra për Bujqësi të Qëndrueshme dhe Zhvillim Rural (CESARD) është e përkushtuar për të promovuar praktika të qëndrueshme bujqësore, zhvillim rural dhe përfshirje të komunitetit për një të ardhme më të gjelbër dhe të qëndrueshme.
       </p>
     </section>
   
-    <section class="what-we-do fade-in">
+    <section id="services" class="what-we-do fade-in">
       <h2 class="section-title">Çfarë Bëjmë Ne</h2>
       <div class="cards">
         <div class="card" style="background-image: url('images/r1.jpg');">
@@ -147,8 +149,75 @@
         </div>
       </div>
     </section>
-  </main>
 
+    <!-- New Energy Efficiency Section -->
+    <section id="energy-efficiency" class="energy-efficiency-section fade-in">
+      <h2 class="section-title">Efikasitet Energjetik</h2>
+      <div class="energy-content">
+        <div class="energy-text">
+          <h3>Përmirësimi i Efikasitetit Energjetik në Komunitetet Rurale</h3>
+          <p>CESARD është e përkushtuar për të promovuar praktika të qëndrueshme energjetike në komunitetet rurale. Fokusi ynë është në implementimin e teknologjive të rena dhe zgjidhjeve inovative për të reduktuar konsumin e energjisë dhe për të përmirësuar cilësinë e jetesës.</p>
+          <ul>
+            <li>Instalimi i paneleve diellore për familjet rurale</li>
+            <li>Përmirësimi i izolimit termik të ndërtesave</li>
+            <li>Promovimi i teknologjive të energjisë së rinovueshme</li>
+            <li>Edukim për efikasitetin energjetik</li>
+          </ul>
+        </div>
+        <div class="energy-image">
+          <div class="energy-visual">
+            <div class="energy-icon">⚡</div>
+            <div class="energy-stats">
+              <div class="stat">
+                <span class="stat-number">40%</span>
+                <span class="stat-label">Reduktim i konsumit</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">100+</span>
+                <span class="stat-label">Familje të ndihmuara</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- New Rural Tourism Section -->
+    <section id="rural-tourism" class="rural-tourism-section fade-in">
+      <h2 class="section-title">Turizëm Rural</h2>
+      <div class="tourism-content">
+        <div class="tourism-intro">
+          <h3>Zhvillimi i Turizmit Rural në Rajonin e Sharrit</h3>
+          <p>Turizmi rural përfaqëson një mundësi të madhe për zhvillimin ekonomik të komuniteteve rurale. Në CESARD, ne fokusohemi në krijimin e përvojave autentike që lidhin turistët me kulturën dhe traditat lokale.</p>
+        </div>
+        <div class="tourism-highlights">
+          <div class="highlight-item">
+            <div class="highlight-icon">🏔️</div>
+            <h4>Stanet e Shipkovicës</h4>
+            <p>Përvoja autentike malore me akomodim tradicional</p>
+          </div>
+          <div class="highlight-item">
+            <div class="highlight-icon">🍃</div>
+            <h4>Eko-turizmi</h4>
+            <p>Eksplorimi i natyrës së paprekur të Sharrit</p>
+          </div>
+          <div class="highlight-item">
+            <div class="highlight-icon">🍽️</div>
+            <h4>Kuzhina Tradicionale</h4>
+            <p>Shijimi i ushqimeve autentike lokale</p>
+          </div>
+        </div>
+        <div class="tourism-cta">
+          <a href="#discover-more" class="look-more-btn">
+            <span>Shiko më shumë</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 17l9.2-9.2M17 17V7H7"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <section class="upcoming-section fade-in">
     <h2 class="section-title">Aktivitetet dhe Planet e Ardhshme</h2>
@@ -160,7 +229,7 @@
           <span>📅 E diel, 8 Qershor 2025</span>
         </div>
         <div class="upcoming-desc">
-          Mountain Club "Tetova" është i lumtur të njoftojë edicionin e 3-të të Marshit Tradicional, këtë vit në format festiv, në bashkëpunim me CESARD.<br><br>
+          Cesard është i lumtur të njoftojë edicionin e 3-të të Marshit Tradicional, këtë vit në format festiv, në bashkëpunim me Mountain Club "Tetova".<br><br>
           <strong>Destinacioni:</strong> Gjuha e Lopës - kthim në Stanet e Shipkovicës<br>
           <strong>Përfshirë:</strong> Çaj mali, kokoshka, ushqim tradicional, lojëra baritore & atmosferë festive!<br><br>
           <div class="upcoming-note">👣 Mbi 300 pjesëmarrës priten nga rajoni dhe më gjerë. Të gjithë dashamirësit e natyrës, familjet dhe turistët janë të ftuar!</div>
@@ -169,7 +238,56 @@
       </div>
     </div>
   </section>
-  <section class="news-section fade-in">
+
+  <!-- New Discover More Section -->
+  <section id="discover-more" class="discover-more-section fade-in">
+    <h2 class="section-title">Zbuloni Më Shumë</h2>
+    <div class="discover-grid">
+      <div class="discover-card" style="background-image: url('images/h2.jpg');">
+        <div class="discover-overlay">
+          <div class="discover-icon">🏠</div>
+          <h3>Akomodim</h3>
+          <p>Përvoja e akomodimit autentik në stanet tradicionale të malit</p>
+          <div class="discover-features">
+            <span>Stanet e Shipkovicës</span>
+            <span>Kuzhina tradicionale</span>
+            <span>Pamje mahnitëse</span>
+          </div>
+          <a href="#contact" class="discover-btn">Rezervo</a>
+        </div>
+      </div>
+
+      <div class="discover-card" style="background-image: url('images/h3.jpg');">
+        <div class="discover-overlay">
+          <div class="discover-icon">🎯</div>
+          <h3>Atrakcione</h3>
+          <p>Eksploroni atrakcionet unike dhe aktivitetet e natyrës</p>
+          <div class="discover-features">
+            <span>Pikat panoramike</span>
+            <span>Aktivitetet sezonale</span>
+            <span>Eksperiencat kulturore</span>
+          </div>
+          <a href="#contact" class="discover-btn">Rezervo</a>
+        </div>
+      </div>
+
+      <div class="discover-card" style="background-image: url('images/h1.jpeg');">
+        <div class="discover-overlay">
+          <div class="discover-icon">🥾</div>
+          <h3>Hiking</h3>
+          <p>Rrugët më të bukura të ecjes në malin e Sharrit</p>
+          <div class="discover-features">
+            <span>Rrugët e shënuara</span>
+            <span>Udhëheqës ekspertë</span>
+            <span>Siguria e plotë</span>
+          </div>
+          <a href="#contact" class="discover-btn">Rezervo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="news" class="news-section fade-in">
     <h2 class="section-title">Lajme</h2>
     <div class="news-cards">
       <div class="news-card">
@@ -199,6 +317,13 @@
         <input type="tel" id="phone" name="phone" placeholder="Numri i Telefonit" required>
         <label for="email">Email</label>
         <input type="email" id="email" name="email" placeholder="Email" required>
+        <label for="service">Zgjidhni Shërbimin</label>
+        <select id="service" name="service" required>
+          <option value="">Zgjidhni një shërbim...</option>
+          <option value="akomodim">Akomodim</option>
+          <option value="atrakcione">Atrakcione</option>
+          <option value="hiking">Hiking</option>
+        </select>
         <label for="message">Mesazhi</label>
         <textarea id="message" name="message" rows="4" placeholder="Mesazhi juaj" required></textarea>
         <button type="submit">Dërgo</button>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projektet Tona – CESARD</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+  <header class="header">
+    <div class="header-content">
+      <div class="logo">
+        <img src="images/logo.png" alt="CESARD Logo">
+        CESARD
+      </div>
+      <!-- Mobile Navigation Toggle -->
+      <button class="mobile-nav-toggle" id="mobileNavToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav">
+        <ul class="nav-links">
+          <li><a href="index.html#home">Kryesore</a></li>
+          <li><a href="index.html#about">Rreth Nesh</a></li>
+          <li><a href="index.html#services">Shërbimet</a></li>
+          <li><a href="projects.html" class="active">Projektet Tona</a></li>
+          <li><a href="index.html#news">Lajme</a></li>
+          <li><a href="index.html#contact">Kontakti</a></li>
+        </ul>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/cesard_tetove" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.facebook.com/cesardtetove" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://wa.me/38971234567" target="_blank" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+        <div class="custom-lang-selector" id="customLangSelector">
+          <button class="lang-selected" id="langSelectedBtn">
+            <img src="flags/al.png" alt="Albanian" class="lang-flag"> SQ
+            <span class="lang-arrow">▼</span>
+          </button>
+          <div class="lang-options" id="langOptions">
+            <div class="lang-option" data-lang="sq"><img src="flags/al.png" alt="Albanian" class="lang-flag"> SQ</div>
+            <div class="lang-option" data-lang="en"><img src="flags/en.png" alt="English" class="lang-flag"> EN</div>
+            <div class="lang-option" data-lang="mk"><img src="flags/mk.png" alt="Macedonian" class="lang-flag"> MK</div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+  
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-header">
+      <div class="logo">CESARD</div>
+      <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+    
+    <nav class="mobile-menu-nav">
+      <a href="index.html#home">Kryesore</a>
+      <a href="index.html#about">Rreth Nesh</a>
+      <a href="index.html#services">Shërbimet</a>
+      <a href="projects.html" class="active">Projektet Tona</a>
+      <a href="index.html#news">Lajme</a>
+      <a href="index.html#contact">Kontakti</a>
+    </nav>
+    
+    <div class="mobile-menu-footer">
+      <div class="custom-lang-selector mobile" id="customLangSelectorMobile">
+        <button class="lang-selected" id="langSelectedBtnMobile">
+          <img src="flags/al.png" alt="Albanian" class="lang-flag"> SQ
+          <span class="lang-arrow">▼</span>
+        </button>
+        <div class="lang-options" id="langOptionsMobile">
+          <div class="lang-option" data-lang="sq"><img src="flags/al.png" alt="Albanian" class="lang-flag"> SQ</div>
+          <div class="lang-option" data-lang="en"><img src="flags/en.png" alt="English" class="lang-flag"> EN</div>
+          <div class="lang-option" data-lang="mk"><img src="flags/mk.png" alt="Macedonian" class="lang-flag"> MK</div>
+        </div>
+      </div>
+      <div class="mobile-social-icons">
+        <a href="https://www.instagram.com/cesard_tetove" target="_blank" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/cesardtetove" target="_blank" aria-label="Facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://wa.me/38971234567" target="_blank" aria-label="WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section id="projects" class="projects-section fade-in">
+      <h2 class="section-title">Projektet Tona</h2>
+      
+      <div class="project-content">
+        <div class="project-intro">
+          <h3>Turizmi rural si mundësi zhvillimore</h3>
+          <p>Zhvillimi i turizmit rural është përcaktuar si një nga faktorët kyç për zhvillimin ekonomik lokal dhe veçanërisht për ekonominë rurale. Për vendet e vogla dhe në proces zhvillimi, një nga përfitimet kryesore që mund dhe duhet të shfrytëzohet janë burimet natyrore.</p>
+          <p>Theksi vihet tek vendet më pak të zhvilluara si dhe ato në proces zhvillimi, pasi natyra dhe burimet natyrore ende janë të "ruajtura" nga ndotja dhe shfrytëzimi i pakontrolluar. Në Maqedoninë e Veriut, një segment i tillë i mrekullueshëm ndodhet në pjesën veriperëndimore të vendit.</p>
+        </div>
+
+        <div class="project-section">
+          <h3>Qëllimi i hulumtimit</h3>
+          <p>Qëllimi i këtij hulumtimi është të nxjer në pah potencialin ekonomik për zhvillimin e ekonomisë rurale dhe turizmit rural tek në rajonin e quajtur Stanet e Shipkovicës si edhe tek të gjithat entitetet joformale që ekzistojnë në pjesën malore të rajonit të Pollogut.</p>
+          <p>Hulumtimi është pjesë e projektit "Stanet e Shipkovicës - Përvoja autentike", financuar nga CNVP.</p>
+          <p>Për realizimin e këtij hulumtimi janë përdorur disa metoda dhe teknika edhe atë:</p>
+          <ul>
+            <li>Hartimi i një pyetësori i shpërndarë tek një masë më e gjerë e njerëzve potencial</li>
+            <li>Përvoja direkte jetësore e realizuesit të këtij hulumtimi</li>
+            <li>Komunikimi me banorë të më të vjetër që ndër vite kanë jetuar në këto vise</li>
+            <li>Intervista në terren me pronarët/banorët e stanëve</li>
+          </ul>
+        </div>
+
+        <div class="project-section">
+          <h3>Parku Kombëtar Mali Sharr</h3>
+          <p>Mali Sharr është një masiv i madh malor i lartë që shtrihet përgjatë zonës kufitare midis Maqedonisë së Veriut dhe Kosovës. Zona e Malit Sharr përfaqëson një pikë të nxehtë të biodiversitetit evropian me vlera të jashtëzakonshme natyrore.</p>
+          <p>Më 30 qershor 2021, Kuvendi i RMV-së shpalli një pjesë të Malit Sharr si Park Kombëtar. Sipas kritereve të IUCN-së, parku i përket kategorisë II të zonave të mbrojtura – Park Kombëtar, me më shumë se 75% të territorit nën një shkallë të lartë mbrojtjeje.</p>
+          <p>Parku shtrihet në një sipërfaqe prej mbi 62,705 hektarësh dhe është i pasur me pyje, livadhe, liqene akullnajore, rrjedha ujore dhe një morfologji të larmishme gjeografike.</p>
+        </div>
+
+        <div class="project-section">
+          <h3>Historiku i Staneve të Shipkovicës</h3>
+          <p>Stanet e Shipkovicës janë të vendosura në një lokacion shumë atraktiv. Ndodhen hiç më shumë se 4 kilometra nga Kodra e Diellit. Aktualisht ka 63 Stane, të cilat kohët e fundit më së shumti ju ngjajnë vikend-shtëpizave se sa staneve të vërteta.</p>
+          <p>Nga stanet tërësisht tradicionale si në kohërat e kaluara ka ngel vetëm një - Stani i Neshatit, një bari që ende në mënyrën më tradicionale të mundshme, vazhdon me kultivimin e bagëtive të imta.</p>
+          <p>Sot pjesa dërmuese e tyre përdoren për qëllime rekreacioni, fundjavë me familje e me miq. Banorë që ende meren me bagëti dhe që vazhdojnë e përdorin objektet e përkohshme janë hiç më shumë se 7 familje.</p>
+        </div>
+
+        <div class="project-section">
+          <h3>Turizmi rural si formë alternative për zhvillimin ekonomive rurale</h3>
+          <p>Stanet mund të transformohen në qendra të vogla turistike, ku vizitorët mund të përjetojnë jetën tradicionale malore: ushqim bio, përgatitje djathi, ecje në natyrë, eksplorim të florës dhe faunës.</p>
+          <p>Rajoni i Sharrit ofron disa lloje potenciale të turizmit:</p>
+          <ul>
+            <li><strong>Agroturizmi:</strong> Vizitorët përjetojnë jetën në stan, ndihmojnë në blegtori, shijojnë produkte tradicionale</li>
+            <li><strong>Eko-turizmi:</strong> Ecje në natyrë, vëzhgim i florës/faunës, eksplorim i liqeneve dhe shtigjeve</li>
+            <li><strong>Turizmi kulinar:</strong> Degustim i ushqimeve tradicionale: flija, djathi, mishi i thatë, etj.</li>
+            <li><strong>Turizmi sportiv:</strong> Ecje, çiklizëm malor, kamping, ski në dimër në afërsi të Popova Shapkës</li>
+            <li><strong>Turizmi kulturor:</strong> Promovimi i zakoneve, festave dhe veshjeve tradicionale të zonës</li>
+          </ul>
+        </div>
+
+        <div class="project-section">
+          <h3>Gjetjet nga hulumtimi</h3>
+          <p>Nga gjithsej 21 të anketuar rezulton se:</p>
+          <ul>
+            <li>11 prej tyre e kanë në shfrytëzim stanin më shumë se 10 vjet</li>
+            <li>13 prej tyre janë pronarë të parë kurse 8 nga të anketuarit e kanë të trashëguar</li>
+            <li>Vetëm 7 prej tyre e përdorin për ruajtjen e bagëtive, kurse 14 të tjerët e shfrytëzojnë vetëm për pushim</li>
+            <li>16-të nga të anketuarit besojnë se Stanet e Shipkovicës mund të ndihmojnë në ekonominë rurale</li>
+            <li>19 nga të anketuarit janë të interesuar për projekte që do të ndihmonin në përmirësimin e kushteve</li>
+          </ul>
+        </div>
+
+        <div class="project-section">
+          <h3>Mundësitë e identifikuara</h3>
+          <div class="opportunities-grid">
+            <div class="opportunity-card">
+              <h4>Mundësia e parë: Agroturizëm Vila Stanet</h4>
+              <ul>
+                <li>Akomodim</li>
+                <li>Akomodim dhe ushqime tradicionale</li>
+                <li>Guidë Malore</li>
+                <li>Mjaltë</li>
+              </ul>
+            </div>
+            
+            <div class="opportunity-card">
+              <h4>Mundësia e dytë: Tafil Arifi</h4>
+              <p>Një blegtor me traditë familjare disa dekadëshe</p>
+              <ul>
+                <li>Një ditë bari - shoqërim me baiun e tufër në bjeshkë</li>
+                <li>Mjellja e deleve</li>
+                <li>Shitjen e prodhimeve të qumështit</li>
+              </ul>
+            </div>
+            
+            <div class="opportunity-card">
+              <h4>Mundësia e tretë: Nexhbedin Haliti – Eko Natyra</h4>
+              <ul>
+                <li>Akomodim</li>
+                <li>Digustimi i çajrave të ndryshëm nga bjeshkët e Sharrit</li>
+                <li>Guidë Malore</li>
+                <li>Guidë për të dëgjuar zogjtë</li>
+                <li>Guidë për të parë kafshë të egra</li>
+              </ul>
+            </div>
+            
+            <div class="opportunity-card">
+              <h4>Mundësia e katërt: Vejtse Hause_Veli Veiu Vicë</h4>
+              <p>Akomodim deri ne 10 persona, ushqim dhe guidë turistike</p>
+            </div>
+            
+            <div class="opportunity-card">
+              <h4>Mundësia e pestë: Muhamed Jashari f. Veshallë</h4>
+              <ul>
+                <li>Akomodim dhe ushqim</li>
+                <li>Mjaltë dhe produkte blete</li>
+              </ul>
+            </div>
+            
+            <div class="opportunity-card">
+              <h4>Mundësia e gjashtë: Traditional food Bozovca</h4>
+              <p>Shahin Fazlija – Bozovcë</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-section">
+          <h3>Përfundim</h3>
+          <p>Ky hulumtim, ndoshta i pari i këtij lloji, do shërbejë si një burim informacioni për historikun dhe zhvillimin e staneve të Shipkovicës. Rëndësia e tij qëndron në identifikimin e potencialit turistik gërshetuar me mundësitë e ekonomive të vogla familjare joformale.</p>
+          <p>Në hulumtim u përfshinë 21 persona, e të cilët si ofertë finale për turistët potencial ofruan:</p>
+          <ul>
+            <li>Akomodim</li>
+            <li>Ushqime tradicionale</li>
+            <li>Guidë</li>
+            <li>Shëtitje në natyrë për të parë florën dhe faunë</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- PDF Download Section -->
+      <div class="pdf-download-section">
+        <h3>Shkarkoni Hulumtimin e Plotë</h3>
+        <p>Për të lexuar hulumtimin e plotë me të gjitha detajet dhe analizat, shkarkoni dokumentin PDF:</p>
+        <a href="https://drive.google.com/file/d/12gE0czcH-VKAeiqTftjoKgfJy0ydQbWv/view?usp=sharing" class="pdf-download-btn" target="_blank">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14,2 14,8 20,8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10,9 9,9 8,9"></polyline>
+          </svg>
+          Shkarkoni Hulumtimin e Plotë (PDF)
+        </a>
+        <p class="pdf-info">Dokumenti përmban të gjitha detajet e hulumtimit, metodologjinë, rezultatet dhe rekomandimet për zhvillimin e turizmit rural në rajonin e Staneve të Shipkovicës.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>&copy; 2024 CESARD</div>
+  </footer>
+  <script src="java.js"></script>
+</body>
+</html> 

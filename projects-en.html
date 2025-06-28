@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Projects – CESARD</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+  <header class="header">
+    <div class="header-content">
+      <div class="logo">
+        <img src="images/logo.png" alt="CESARD Logo">
+        CESARD
+      </div>
+      <!-- Mobile Navigation Toggle -->
+      <button class="mobile-nav-toggle" id="mobileNavToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav">
+        <ul class="nav-links">
+          <li><a href="index-en.html#home">Home</a></li>
+          <li><a href="index-en.html#about">About</a></li>
+          <li><a href="index-en.html#services">Services</a></li>
+          <li><a href="projects-en.html" class="active">Our Projects</a></li>
+          <li><a href="index-en.html#news">News</a></li>
+          <li><a href="index-en.html#contact">Contact</a></li>
+        </ul>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/cesard_tetove" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.facebook.com/cesardtetove" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://wa.me/38971234567" target="_blank" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+        <div class="custom-lang-selector" id="customLangSelector">
+          <button class="lang-selected" id="langSelectedBtn">
+            <img src="flags/en.png" alt="English" class="lang-flag"> EN
+            <span class="lang-arrow">▼</span>
+          </button>
+          <div class="lang-options" id="langOptions">
+            <div class="lang-option" data-lang="sq"><img src="flags/al.png" alt="Albanian" class="lang-flag"> SQ</div>
+            <div class="lang-option" data-lang="en"><img src="flags/en.png" alt="English" class="lang-flag"> EN</div>
+            <div class="lang-option" data-lang="mk"><img src="flags/mk.png" alt="Macedonian" class="lang-flag"> MK</div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+  
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-header">
+      <div class="logo">CESARD</div>
+      <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+    
+    <nav class="mobile-menu-nav">
+      <a href="index-en.html#home">Home</a>
+      <a href="index-en.html#about">About</a>
+      <a href="index-en.html#services">Services</a>
+      <a href="projects-en.html" class="active">Our Projects</a>
+      <a href="index-en.html#news">News</a>
+      <a href="index-en.html#contact">Contact</a>
+    </nav>
+    
+    <div class="mobile-menu-footer">
+      <div class="custom-lang-selector mobile" id="customLangSelectorMobile">
+        <button class="lang-selected" id="langSelectedBtnMobile">
+          <img src="flags/en.png" alt="English" class="lang-flag"> EN
+          <span class="lang-arrow">▼</span>
+        </button>
+        <div class="lang-options" id="langOptionsMobile">
+          <div class="lang-option" data-lang="sq"><img src="flags/al.png" alt="Albanian" class="lang-flag"> SQ</div>
+          <div class="lang-option" data-lang="en"><img src="flags/en.png" alt="English" class="lang-flag"> EN</div>
+          <div class="lang-option" data-lang="mk"><img src="flags/mk.png" alt="Macedonian" class="lang-flag"> MK</div>
+        </div>
+      </div>
+      <div class="mobile-social-icons">
+        <a href="https://www.instagram.com/cesard_tetove" target="_blank" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/cesardtetove" target="_blank" aria-label="Facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://wa.me/38971234567" target="_blank" aria-label="WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section id="projects" class="projects-section fade-in">
+      <h2 class="section-title">Our Projects</h2>
+      <p style="text-align:center; font-size:1.2rem; margin-top:2rem;">Our main projects will be displayed here. Add your content later as you wish!</p>
+    </section>
+  </main>
+
+  <footer>
+    <div>&copy; 2024 CESARD</div>
+  </footer>
+  <script src="java.js"></script>
+</body>
+</html> 

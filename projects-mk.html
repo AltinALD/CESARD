@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Наши Проекти – CESARD</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+  <header class="header">
+    <div class="header-content">
+      <div class="logo">
+        <img src="images/logo.png" alt="CESARD Logo">
+        CESARD
+      </div>
+      <!-- Mobile Navigation Toggle -->
+      <button class="mobile-nav-toggle" id="mobileNavToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav">
+        <ul class="nav-links">
+          <li><a href="index-mk.html#home">Почетна</a></li>
+          <li><a href="index-mk.html#about">За Нас</a></li>
+          <li><a href="index-mk.html#services">Услуги</a></li>
+          <li><a href="projects-mk.html" class="active">Наши Проекти</a></li>
+          <li><a href="index-mk.html#news">Вести</a></li>
+          <li><a href="index-mk.html#contact">Контакт</a></li>
+        </ul>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/cesard_tetove" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.facebook.com/cesardtetove" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://wa.me/38971234567" target="_blank" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+        <div class="custom-lang-selector" id="customLangSelector">
+          <button class="lang-selected" id="langSelectedBtn">
+            <img src="flags/mk.png" alt="Macedonian" class="lang-flag"> MK
+            <span class="lang-arrow">▼</span>
+          </button>
+          <div class="lang-options" id="langOptions">
+            <div class="lang-option" data-lang="sq"><img src="flags/al.png" alt="Albanian" class="lang-flag"> SQ</div>
+            <div class="lang-option" data-lang="en"><img src="flags/en.png" alt="English" class="lang-flag"> EN</div>
+            <div class="lang-option" data-lang="mk"><img src="flags/mk.png" alt="Macedonian" class="lang-flag"> MK</div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+  
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-header">
+      <div class="logo">CESARD</div>
+      <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+    
+    <nav class="mobile-menu-nav">
+      <a href="index-mk.html#home">Почетна</a>
+      <a href="index-mk.html#about">За Нас</a>
+      <a href="index-mk.html#services">Услуги</a>
+      <a href="projects-mk.html" class="active">Наши Проекти</a>
+      <a href="index-mk.html#news">Вести</a>
+      <a href="index-mk.html#contact">Контакт</a>
+    </nav>
+    
+    <div class="mobile-menu-footer">
+      <div class="custom-lang-selector mobile" id="customLangSelectorMobile">
+        <button class="lang-selected" id="langSelectedBtnMobile">
+          <img src="flags/mk.png" alt="Macedonian" class="lang-flag"> MK
+          <span class="lang-arrow">▼</span>
+        </button>
+        <div class="lang-options" id="langOptionsMobile">
+          <div class="lang-option" data-lang="sq"><img src="flags/al.png" alt="Albanian" class="lang-flag"> SQ</div>
+          <div class="lang-option" data-lang="en"><img src="flags/en.png" alt="English" class="lang-flag"> EN</div>
+          <div class="lang-option" data-lang="mk"><img src="flags/mk.png" alt="Macedonian" class="lang-flag"> MK</div>
+        </div>
+      </div>
+      <div class="mobile-social-icons">
+        <a href="https://www.instagram.com/cesard_tetove" target="_blank" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/cesardtetove" target="_blank" aria-label="Facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://wa.me/38971234567" target="_blank" aria-label="WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section id="projects" class="projects-section fade-in">
+      <h2 class="section-title">Наши Проекти</h2>
+      
+      <div class="project-content">
+        <div class="project-intro">
+          <h3>Рурален туризам како можности за развој</h3>
+          <p>Развојот на руралниот туризам е определен како еден од клучните фактори за локалниот економски развој и особено за руралната економија. За малите земји и оние во процес на развој, една од главните придобивки што може и треба да се искористат се природните ресурси.</p>
+          <p>Акцентот се става на местата што се помалку развиени како и оние во процес на развој, бидејќи природата и природните ресурси сè уште се "зачувани" од загадувањето и неконтролираното искористување. Во Северна Македонија, таков прекрасен сегмент се наоѓа во северозападниот дел од земјата.</p>
+        </div>
+
+        <div class="project-section">
+          <h3>Цел на истражувањето</h3>
+          <p>Целта на ова истражување е да се истакне економскиот потенцијал за развој на руралната економија и руралниот туризам во регионот наречен Становите на Шипковица како и во сите неформални ентитети што постојат во планинскиот дел на Полог регионот.</p>
+          <p>Истражувањето е дел од проектот "Становите на Шипковица - Автентично искуство", финансиран од CNVP.</p>
+          <p>За реализација на ова истражување се користени неколку методи и техники и тоа:</p>
+          <ul>
+            <li>Изработка на прашалник дистрибуиран до поширока маса на потенцијални луѓе</li>
+            <li>Директно животно искуство на реализаторот на ова истражување</li>
+            <li>Комуникација со постари жители што низ годините живееле во овие краишта</li>
+            <li>Интервјуа на терен со сопствениците/жителите на становите</li>
+          </ul>
+        </div>
+
+        <div class="project-section">
+          <h3>Националниот парк Шар Планина</h3>
+          <p>Шар Планина е голем висок планински масив што се протега по должината на граничната зона помеѓу Северна Македонија и Косово. Областа на Шар Планина претставува топла точка на европскиот биодиверзитет со исклучителни природни вредности.</p>
+          <p>На 30 јуни 2021 година, Собранието на РМ објави дел од Шар Планина како Национален парк. Според критериумите на IUCN, паркот припаѓа на категорија II на заштитени области – Национален парк, со повеќе од 75% од територијата под висок степен на заштита.</p>
+          <p>Паркот се протега на површина од над 62,705 хектари и е богат со шуми, ливади, леднички езера, водни текови и разновидна географска морфологија.</p>
+        </div>
+
+        <div class="project-section">
+          <h3>Историја на Становите на Шипковица</h3>
+          <p>Становите на Шипковица се лоцирани на многу атрактивна локација. Се наоѓаат на нешто повеќе од 4 километри од Кодра е Диеллит. Во моментов има 63 Станови, кои во последно време најмногу личат на викенд-куќи отколку на вистински станови.</p>
+          <p>Од сосема традиционалните станови како во минатите времиња останал само еден - Станот на Нешати, овчар што сè уште на најтрадиционален можен начин продолжува со одгледување на ситна стока.</p>
+          <p>Денес поголемиот дел од нив се користат за рекреативни цели, викенд со семејство и пријатели. Жителите што сè уште се занимаваат со стока и што продолжуваат да ги користат привремените објекти се нешто повеќе од 7 семејства.</p>
+        </div>
+
+        <div class="project-section">
+          <h3>Рурален туризам како алтернативна форма за развој на руралните економии</h3>
+          <p>Становите можат да се трансформираат во мали туристички центри, каде посетителите можат да доживеат традиционален планински живот: био храна, подготовка на сирење, прошетка во природа, истражување на флората и фауната.</p>
+          <p>Регионот на Шара нуди неколку потенцијални видови туризам:</p>
+          <ul>
+            <li><strong>Агротуризам:</strong> Посетителите доживуваат живот во стан, помагаат во сточарство, уживаат традиционални производи</li>
+            <li><strong>Еко-туризам:</strong> Прошетка во природа, набљудување на флора/фауна, истражување на езера и патеки</li>
+            <li><strong>Кулинарски туризам:</strong> Дегустација на традиционална храна: флија, сирење, суво месо, итн.</li>
+            <li><strong>Спортски туризам:</strong> Прошетка, планински велосипедизам, кампување, скијање во зима во близина на Попова Шапка</li>
+            <li><strong>Културен туризам:</strong> Промоција на обичаи, празници и традиционална облека на областа</li>
+          </ul>
+        </div>
+
+        <div class="project-section">
+          <h3>Откритија од истражувањето</h3>
+          <p>Од вкупно 21 анкетиран резултира дека:</p>
+          <ul>
+            <li>11 од нив го имаат стан во искористување повеќе од 10 години</li>
+            <li>13 од нив се први сопственици додека 8 од анкетираните го имаат наследено</li>
+            <li>Само 7 од нив го користат за чување на стока, додека 14 други го искористуваат само за одмор</li>
+            <li>16-те од анкетираните веруваат дека Становите на Шипковица можат да помогнат во руралната економија</li>
+            <li>19 од анкетираните се заинтересирани за проекти што би помогнале во подобрувањето на условите</li>
+          </ul>
+        </div>
+
+        <div class="project-section">
+          <h3>Идентификувани можности</h3>
+          <div class="opportunities-grid">
+            <div class="opportunity-card">
+              <h4>Прва можност: Агротуризам Вила Станови</h4>
+              <ul>
+                <li>Сместување</li>
+                <li>Сместување и традиционална храна</li>
+                <li>Планински водич</li>
+                <li>Мед</li>
+              </ul>
+            </div>
+            
+            <div class="opportunity-card">
+              <h4>Втора можност: Тафил Арифи</h4>
+              <p>Овчар со семејна традиција неколку децении</p>
+              <ul>
+                <li>Еден ден овчар - придружба со овчарот на стадото во планина</li>
+                <li>Мелба на овци</li>
+                <li>Продажба на млечни производи</li>
+              </ul>
+            </div>
+            
+            <div class="opportunity-card">
+              <h4>Трета можност: Неџбедин Халити – Еко Натура</h4>
+              <ul>
+                <li>Сместување</li>
+                <li>Дегустација на различни чаеви од планините на Шара</li>
+                <li>Планински водич</li>
+                <li>Водич за слушање на птици</li>
+                <li>Водич за гледање диви животни</li>
+              </ul>
+            </div>
+            
+            <div class="opportunity-card">
+              <h4>Четврта можност: Вејце Хаусе_Вели Веју Вица</h4>
+              <p>Сместување до 10 лица, храна и туристички водич</p>
+            </div>
+            
+            <div class="opportunity-card">
+              <h4>Петта можност: Мухамед Јашари ф. Вешала</h4>
+              <ul>
+                <li>Сместување и храна</li>
+                <li>Мед и пчеларски производи</li>
+              </ul>
+            </div>
+            
+            <div class="opportunity-card">
+              <h4>Шеста можност: Традиционална храна Бозовца</h4>
+              <p>Шахин Фазлија – Бозовца</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-section">
+          <h3>Заклучок</h3>
+          <p>Ова истражување, можеби првото од овој вид, ќе послужи како извор на информации за историјата и развојот на становите на Шипковица. Неговата важност лежи во идентификувањето на туристичкиот потенцијал испреплетен со можностите на малите неформални семејни економии.</p>
+          <p>Во истражувањето се вклучени 21 лице, кои како конечна понуда за потенцијалните туристи нудат:</p>
+          <ul>
+            <li>Сместување</li>
+            <li>Традиционална храна</li>
+            <li>Водич</li>
+            <li>Прошетка во природа за гледање на флората и фауната</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- PDF Download Section -->
+      <div class="pdf-download-section">
+        <h3>Преземете го целосното истражување</h3>
+        <p>За да го прочитате целосното истражување со сите детали и анализи, преземете го документот PDF:</p>
+        <a href="https://drive.google.com/file/d/12gE0czcH-VKAeiqTftjoKgfJy0ydQbWv/view?usp=sharing" class="pdf-download-btn" target="_blank">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14,2 14,8 20,8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10,9 9,9 8,9"></polyline>
+          </svg>
+          Преземете го целосното истражување (PDF)
+        </a>
+        <p class="pdf-info">Документот содржи сите детали на истражувањето, методологијата, резултатите и препораките за развој на руралниот туризам во регионот на Становите на Шипковица.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>&copy; 2024 CESARD</div>
+  </footer>
+  <script src="java.js"></script>
+</body>
+</html> 
