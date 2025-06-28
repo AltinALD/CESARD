@@ -1999,7 +1999,7 @@ html {
 }
 
 .discover-card h3 {
-  font-size: 2rem;
+  font-size: 1.2rem;
   font-weight: 700;
   margin-bottom: 1rem;
   text-shadow: 0 2px 8px rgba(0,0,0,0.3);
@@ -2077,7 +2077,7 @@ html {
   }
 
   .discover-card h3 {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
   }
 
   .discover-card p {
@@ -2117,7 +2117,7 @@ html {
   }
 
   .discover-card h3 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 
   .discover-card p {
