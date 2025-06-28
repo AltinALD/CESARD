@@ -147,6 +147,122 @@
         </div>
       </div>
     </section>
+
+    <!-- New Energy Efficiency Section -->
+    <section id="energy-efficiency" class="energy-efficiency-section fade-in">
+      <h2 class="section-title">Energy Efficiency</h2>
+      <div class="energy-content">
+        <div class="energy-text">
+          <h3>Improving Energy Efficiency in Rural Communities</h3>
+          <p>CESARD is committed to promoting sustainable energy practices in rural communities. Our focus is on implementing renewable technologies and innovative solutions to reduce energy consumption and improve quality of life.</p>
+          <ul>
+            <li>Solar panel installation for rural families</li>
+            <li>Thermal insulation improvements for buildings</li>
+            <li>Promotion of renewable energy technologies</li>
+            <li>Education for energy efficiency</li>
+          </ul>
+        </div>
+        <div class="energy-image">
+          <div class="energy-visual">
+            <div class="energy-icon">⚡</div>
+            <div class="energy-stats">
+              <div class="stat">
+                <span class="stat-number">40%</span>
+                <span class="stat-label">Consumption reduction</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">100+</span>
+                <span class="stat-label">Families helped</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- New Rural Tourism Section -->
+    <section id="rural-tourism" class="rural-tourism-section fade-in">
+      <h2 class="section-title">Rural Tourism</h2>
+      <div class="tourism-content">
+        <div class="tourism-intro">
+          <h3>Rural Tourism Development in the Sharr Region</h3>
+          <p>Rural tourism represents a great opportunity for the economic development of rural communities. At CESARD, we focus on creating authentic experiences that connect tourists with local culture and traditions.</p>
+        </div>
+        <div class="tourism-highlights">
+          <div class="highlight-item">
+            <div class="highlight-icon">🏔️</div>
+            <h4>Shipkovica Apartments</h4>
+            <p>Authentic mountain experience with traditional accommodation</p>
+          </div>
+          <div class="highlight-item">
+            <div class="highlight-icon">🍃</div>
+            <h4>Eco-tourism</h4>
+            <p>Exploration of the untouched nature of Sharr</p>
+          </div>
+          <div class="highlight-item">
+            <div class="highlight-icon">🍽️</div>
+            <h4>Traditional Cuisine</h4>
+            <p>Enjoying authentic local foods</p>
+          </div>
+        </div>
+        <div class="tourism-cta">
+          <a href="#discover-more" class="look-more-btn">
+            <span>Discover more</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 17l9.2-9.2M17 17V7H7"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- New Discover More Section -->
+    <section id="discover-more" class="discover-more-section fade-in">
+      <h2 class="section-title">Discover More</h2>
+      <div class="discover-grid">
+        <div class="discover-card" style="background-image: url('images/akomodim-bg.jpg');">
+          <div class="discover-overlay">
+            <div class="discover-icon">🏠</div>
+            <h3>Accommodation</h3>
+            <p>Authentic accommodation experience in traditional mountain lodges</p>
+            <div class="discover-features">
+              <span>Shipkovica Apartments</span>
+              <span>Traditional cuisine</span>
+              <span>Breathtaking views</span>
+            </div>
+            <a href="#contact" class="discover-btn">Book Now</a>
+          </div>
+        </div>
+
+        <div class="discover-card" style="background-image: url('images/atrakcione-bg.jpg');">
+          <div class="discover-overlay">
+            <div class="discover-icon">🎯</div>
+            <h3>Attractions</h3>
+            <p>Explore unique attractions and nature activities</p>
+            <div class="discover-features">
+              <span>Panoramic points</span>
+              <span>Seasonal activities</span>
+              <span>Cultural experiences</span>
+            </div>
+            <a href="#contact" class="discover-btn">Book Now</a>
+          </div>
+        </div>
+
+        <div class="discover-card" style="background-image: url('images/hiking-bg.jpg');">
+          <div class="discover-overlay">
+            <div class="discover-icon">🥾</div>
+            <h3>Hiking</h3>
+            <p>The most beautiful hiking trails in the Sharr Mountains</p>
+            <div class="discover-features">
+              <span>Marked trails</span>
+              <span>Expert guides</span>
+              <span>Full safety</span>
+            </div>
+            <a href="#contact" class="discover-btn">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
   <section class="upcoming-section fade-in">
     <h2 class="section-title">Upcoming Activities and Plans</h2>
@@ -197,6 +313,13 @@
         <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
         <label for="email">Email</label>
         <input type="email" id="email" name="email" placeholder="Email" required>
+        <label for="service">Select Service</label>
+        <select id="service" name="service" required>
+          <option value="">Select a service...</option>
+          <option value="accommodation">Accommodation</option>
+          <option value="attractions">Attractions</option>
+          <option value="hiking">Hiking</option>
+        </select>
         <label for="message">Message</label>
         <textarea id="message" name="message" rows="4" placeholder="Your message" required></textarea>
         <button type="submit">Send</button>
